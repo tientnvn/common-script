@@ -19,7 +19,7 @@ do
     # echo ${parent[j]};
     file=$(basename ${parent[j]});
     echo $file
-    TAP=j+1
+    TAP=`expr $j + 1`
     echo $file >> $OUTPUT_DIRECTORY/$filename
     echo "Tập $TAP" >> $OUTPUT_DIRECTORY/$filename
     echo "" >> $OUTPUT_DIRECTORY/$filename
